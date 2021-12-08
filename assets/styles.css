@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(247, 249, 251);
+    margin: 0px;
+    font-family: "Poppins";
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 1);
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.LinkedInLogo {
+    margin: 10px 40px;
+}
+
+.header {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr 3fr;
+    height: 100%;
+}
+
+.Image {
+    margin: 10px 20px;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
+
+.imageContainer p {
+    margin: 0px;
+}
+
+.searchContainer {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.searchContainer .searchIcon {
+    grid-column: 1/2;
+}
+
+.searchContainer input {
+    grid-column: 2/6;
+    margin-left: 10px;
+    height: 30px;
+    width: 300px;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid rgba(206, 206, 206, 1);
+}
+
+.header .profileContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr 1fr 1fr;
+    margin: 0px 10px;
+    align-items: center;
+    justify-items: start;
+}
+
+.header .profileContainer p {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.header .profileContainer .authImg {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    border-radius: 100%;
+}
+
+.header .profileContainer .nameLabel {
+    grid-row: 1/2;
+    grid-column: 3/5;
+
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(24, 24, 24, 1);
+    align-self: end;
+}
+
+.header .profileContainer .viewsLabel {
+    grid-row: 2/3;
+    grid-column: 3/5;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(116, 116, 116, 1);
+    align-self: start;
+}
+
+.content {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background: rgba(255, 255, 255, 1);
+    column-gap: 20px;
+}
+
+.content .main .profileBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content .main .profileBlock .up {
+}
+
+.content .main .profileBlock .bottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
+}
+
+.footer {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
