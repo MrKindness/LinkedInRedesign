@@ -8,6 +8,11 @@ p {
     margin: 0px;
 }
 
+.description {
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .header {
     grid-row: 1/2;
     grid-column: 2/4;
@@ -20,7 +25,7 @@ p {
 
 .mainContainer {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 8fr 3fr 1fr;
     row-gap: 30px;
     justify-items: center;
@@ -196,8 +201,6 @@ p {
 .content .profileBlock .description {
     grid-column: 2/3;
     grid-row: 8/9;
-    font-weight: 500;
-    font-size: 16px;
     color: #181818;
 }
 
@@ -297,6 +300,38 @@ p {
     color: #181818;
     align-self: start;
     margin-bottom: 40px;
+}
+
+.contentBlock {
+    grid-column: 2/3;
+}
+
+.contentBlock .content .aboutBlock {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 20fr 1fr;
+    background: rgba(255, 255, 255, 1);
+    align-items: end;
+}
+
+.contentBlock .content .aboutBlock .about {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contentBlock .content .aboutBlock .text {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.contentBlock .content .aboutBlock .seemore {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    font-weight: 500;
+    font-size: 12px;
+    color: #0275b1;
 }
 
 .footer {
