@@ -119,6 +119,7 @@ p {
     display: grid;
     background: rgba(255, 255, 255, 1);
     width: 100%;
+    height: 100%;
 }
 
 .content .profileBlock {
@@ -195,8 +196,8 @@ p {
 .content .profileBlock .description {
     grid-column: 2/3;
     grid-row: 8/9;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     color: #181818;
 }
 
@@ -204,6 +205,8 @@ p {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    justify-self: end;
+    margin-right: 20px;
 }
 
 .content .profileBlock .mainData .locationBlock img {
@@ -234,10 +237,66 @@ p {
 
 .side {
     grid-column: 3/4;
+    display: grid;
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    align-items: center;
     height: 100%;
     background: rgba(255, 255, 255, 1);
     width: 100%;
     margin-left: 60px;
+}
+
+.side div {
+    margin: 0px 30px;
+}
+
+.side hr {
+    width: 90%;
+    justify-self: center;
+    height: 2px;
+    border: none;
+    background: #f4f4f4;
+}
+
+.side .head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.side .head .headText {
+    font-size: 18px;
+    font-weight: 500;
+    color: #181818;
+    margin: 20px 0px 5px 0px;
+}
+
+.side .head .link {
+    justify-self: end;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0275b1;
+    text-decoration: underline;
+    margin: 20px 0px 5px 0px;
+}
+
+.infoBlock {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.infoBlock .number {
+    color: #0275b1;
+    font-weight: 500;
+    font-size: 52px;
+    align-self: end;
+}
+
+.infoBlock .text {
+    font-weight: 500;
+    font-size: 18px;
+    color: #181818;
+    align-self: start;
+    margin-bottom: 40px;
 }
 
 .footer {
