@@ -4,31 +4,40 @@ body {
     font-family: "Poppins";
 }
 
+p {
+    margin: 0px;
+}
+
 .header {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr 3fr;
+    height: 100%;
     width: 100%;
-    height: auto;
     background: rgba(255, 255, 255, 1);
 }
 
 .mainContainer {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 10fr 1fr;
-    row-gap: 20px;
+    grid-template-columns: 1fr 8fr 3fr 1fr;
+    row-gap: 30px;
     justify-items: center;
     align-items: center;
 }
 
-.LinkedInLogo {
-    margin: 10px 40px;
+.logoWrapper {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
-.header {
-    display: grid;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    grid-template-columns: 1fr 1fr 1fr 1fr 3fr 3fr;
-    height: 100%;
+.OthersBlock {
+    grid-column: 4/5;
+    width: 100%;
 }
 
 .Image {
@@ -41,10 +50,7 @@ body {
     align-items: center;
     justify-items: center;
     margin: 0px;
-}
-
-.imageContainer p {
-    margin: 0px;
+    background: rgba(255, 255, 255, 1);
 }
 
 .searchContainer {
@@ -78,7 +84,6 @@ body {
 }
 
 .header .profileContainer p {
-    margin: 0px;
     margin-left: 10px;
 }
 
@@ -112,23 +117,127 @@ body {
     grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
     background: rgba(255, 255, 255, 1);
-    column-gap: 20px;
+    width: 100%;
 }
 
-.content .main .profileBlock {
+.content .profileBlock {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: auto 1fr auto;
+    height: auto;
 }
 
-.content .main .profileBlock .up {
-}
-
-.content .main .profileBlock .bottom {
+.content .profileBlock .up {
+    background-image: url("./images/profile/upBackgroung.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1/6;
+    grid-column: 1/4;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content .profileBlock .up .controls {
+    display: grid;
+    justify-items: end;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.content .profileBlock .up .controls .controls2 {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-right: 30px;
+}
+
+.content .profileBlock .up .controls .controls2 .editButton {
+    display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.content .profileBlock .up .controls .controls2 .editButton p {
+    margin-left: 10px;
+}
+.content .profileBlock .up .controls .controls2 .moreImage {
+    padding: 5px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.content .profileBlock .authorBig {
+    grid-row: 6/11;
+    width: 200px;
+}
+
+.content .profileBlock .mainData {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content .profileBlock .mainData .name {
+    font-weight: 800;
+    font-size: 18px;
+    color: #181818;
+}
+
+.content .profileBlock .description {
+    grid-column: 2/3;
+    grid-row: 8/9;
+    font-weight: 400;
+    font-size: 14px;
+    color: #181818;
+}
+
+.content .profileBlock .mainData .locationBlock {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.content .profileBlock .mainData .locationBlock img {
+    margin-right: 10px;
+}
+
+.content .profileBlock .buttons {
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
+
+.content .profileBlock .buttons div {
+    display: inline-block;
+    padding: 5px 60px;
+    border-radius: 5px;
+}
+
+.content .profileBlock .buttons .contactInfo {
+    background: #0077b5;
+    color: #ffffff;
+}
+
+.content .profileBlock .buttons .connections {
+    border: 1px solid #0275b1;
+    color: #0275b1;
+    margin-left: 10px;
+}
+
+.side {
+    grid-column: 3/4;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    margin-left: 60px;
 }
 
 .footer {

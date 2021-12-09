@@ -9,16 +9,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
         <div class="mainContainer">
-            <img
-                class="Image LinkedInLogo"
-                src="../assets/images/common/LinkedInLogo.svg"
-            />
+            <div class="logoWrapper">
+                <img
+                    class="Image LinkedInLogo"
+                    src="../assets/images/common/LinkedInLogo.svg"
+                />
+            </div>
+
             <div class="header">
                 <div class="imageContainer">
                     <img
@@ -64,7 +67,7 @@
                     <p class="viewsLabel">367 views today</p>
                 </div>
             </div>
-            <div class="imageContainer">
+            <div class="imageContainer OthersBlock">
                 <img
                     class="Image OthersIcon"
                     src="../assets/images/common/others.svg"
@@ -72,18 +75,75 @@
                 <p class="ImageText">OTHER</p>
             </div>
             <div class="content">
-                <div class="main">
-                    <div class="profileBlock">
-                        <div class="up"></div>
-                        <div class="bottom">
-                            <img
-                                class="authBig"
-                                src="../assets/images/common/"
-                            />
+                <div class="profileBlock">
+                    <div class="up">
+                        <img
+                            class="uploadImage"
+                            src="../assets/images/profile/upload.svg"
+                            alt=""
+                        />
+                        <div class="controls">
+                            <div class="controls2">
+                                <div class="editButton">
+                                    <img
+                                        class="editImage"
+                                        src="../assets/images/profile/edit.svg"
+                                        alt=""
+                                    />
+                                    <p class="editProfile">EDIT PROFILE</p>
+                                </div>
+                                <img
+                                    class="moreImage"
+                                    src="../assets/images/profile/more-vertical.svg"
+                                />
+                            </div>
                         </div>
                     </div>
+                    <img
+                        class="authorBig"
+                        src="../assets/images/profile/EllipseAuth.svg"
+                    />
+                    <div class="mainData">
+                        <p class="name">Dmitry Kargaev</p>
+                        <div class="locationBlock">
+                            <img
+                                src="../assets/images/profile/navigation.svg"
+                                alt=""
+                            />
+                            <p class="location">
+                                Saint Petersburg, Russian Federation
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="description">
+                        Freelance UX/UI designer, 80+ projects in web design,
+                        mobile apps (iOS & android) and creative projects. Open
+                        to offers.
+                    </p>
+                    <div class="buttons">
+                        <div class="contactInfo">CONTACT INFO</div>
+                        <div class="connections">1,043 CONNECTIONS</div>
+                    </div>
                 </div>
-                <div class="side"></div>
+            </div>
+            <div class="side">
+                <div class="head">
+                    <p class="headText">YOUR DASHBOARD</p>
+                    <p class="link">GO TO STATS</p>
+                </div>
+                <div class="viewsBlock">
+                    <p class="number">367</p>
+                    <p class="text">views today</p>
+                </div>
+                <div class="postBlock">
+                    <p class="number">15</p>
+                    <p class="text">post views</p>
+                </div>
+                <div class="viewsBlock">
+                    <p class="number">9</p>
+                    <p class="text">search appereances</p>
+                </div>
             </div>
             <div class="footer"></div>
         </div>
