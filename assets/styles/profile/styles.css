@@ -46,6 +46,11 @@ p {
     background: rgba(255, 255, 255, 1);
 }
 
+.header .link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 .header .logoWrapper {
     grid-column: 1/2;
     background: rgba(255, 255, 255, 1);
@@ -61,6 +66,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
     width: 100%;
     background: rgba(255, 255, 255, 1);
+    column-gap: 20px;
 }
 
 .header .OthersBlock {
@@ -68,11 +74,11 @@ p {
     width: 100%;
 }
 
-.Image {
-    margin: 10px 20px;
+.header .Image {
+    margin: 10px 0px;
 }
 
-.imageContainer {
+.header .imageContainer {
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
@@ -80,18 +86,27 @@ p {
     margin: 0px;
 }
 
-.searchContainer {
+.header .imageContainer:hover {
+    cursor: pointer;
+    color: #0275b1;
+}
+
+.header .imageContainer:hover svg path {
+    stroke: #0275b1;
+}
+
+.header .searchContainer {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
 }
 
-.searchContainer .searchIcon {
+.header .searchContainer .searchIcon {
     grid-column: 1/2;
     margin: 0px 5px;
 }
 
-.searchContainer input {
+.header .searchContainer input {
     grid-column: 2/3;
     height: 30px;
     width: auto;
@@ -101,13 +116,19 @@ p {
     border: 1px solid rgba(206, 206, 206, 1);
 }
 
+.header .profileLink {
+    display: grid;
+    justify-items: start;
+    grid-column: 3/4;
+}
+
 .header .profileContainer {
     display: grid;
-    grid-column: 3/4;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: auto 1fr;
     align-items: center;
     justify-items: start;
+    cursor: pointer;
 }
 
 .header .profileContainer p {
@@ -157,7 +178,7 @@ p {
 }
 
 .content .profileBlock .up {
-    background-image: url("./images/profile/upBackgroung.svg");
+    background-image: url("../../images/profile/upBackgroung.svg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1/6;

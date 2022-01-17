@@ -1,0 +1,262 @@
+body {
+    background-color: rgb(247, 249, 251);
+    margin: 0px;
+    font-family: "Poppins";
+}
+
+p {
+    margin: 0px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 18px;
+    color: #181818;
+}
+
+.seemore {
+    font-weight: 500;
+    font-size: 12px;
+    color: #0275b1;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 8fr 3fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.header {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr 8fr 3fr 1fr;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+}
+
+.header .link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.header .logoWrapper {
+    grid-column: 1/2;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.header .panelBlock {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    column-gap: 20px;
+}
+
+.header .OthersBlock {
+    grid-column: 4/5;
+    width: 100%;
+}
+
+.header .Image {
+    margin: 10px 0px;
+}
+
+.header .imageContainer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
+
+.header .imageContainer:hover {
+    cursor: pointer;
+    color: #0275b1;
+}
+
+.header .imageContainer:hover svg path {
+    stroke: #0275b1;
+}
+
+.header .searchContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.header .searchContainer .searchIcon {
+    grid-column: 1/2;
+    margin: 0px 5px;
+}
+
+.header .searchContainer input {
+    grid-column: 2/3;
+    height: 30px;
+    width: auto;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid rgba(206, 206, 206, 1);
+}
+
+.header .profileLink {
+    display: grid;
+    justify-items: start;
+    grid-column: 3/4;
+}
+
+.header .profileContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: start;
+    cursor: pointer;
+}
+
+.header .profileContainer p {
+    margin-left: 10px;
+}
+
+.header .profileContainer .authImg {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    border-radius: 100%;
+}
+
+.header .profileContainer .nameLabel {
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(24, 24, 24, 1);
+    align-self: end;
+}
+
+.header .profileContainer .viewsLabel {
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(116, 116, 116, 1);
+    align-self: start;
+}
+
+.footLine {
+    grid-column: 1/5;
+    grid-row: 7/8;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: #e7e7e7;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 8/9;
+    grid-template-columns: auto 4fr 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.footer .linkedInImage {
+    grid-row: 1/3;
+    align-items: start;
+}
+
+.footer .navigation {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.footer .navigationText {
+    grid-column: 2/3;
+}
+
+.footer .fastAccessText {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.footer .button {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer .navTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer .fastAccess {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer .fastAccess .navTitle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer .fastAccess .button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.footer .fastAccess .questions {
+    background-color: #0275b1;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer .fastAccess .settings {
+    color: #0275b1;
+    border: solid 1px #0275b1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer .languageText {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+.footer .select {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
