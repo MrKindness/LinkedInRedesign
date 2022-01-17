@@ -377,8 +377,9 @@ p {
     grid-row: 2/3;
     grid-column: 3/4;
     width: 100%;
-    align-items: start;
     display: grid;
+    row-gap: 40px;
+    grid-template-rows: auto auto auto 1fr;
 }
 
 .sideContent .profileSide {
@@ -416,6 +417,50 @@ p {
     text-align: center;
     font-size: 12px;
     font-weight: 400;
+}
+
+.sideContent .newArticleButton {
+    width: auto;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.sideContent .newArticleButton .button {
+    border: none;
+    background: #0077b5;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.sideContent .hashtagsBlock {
+    width: auto;
+    padding: 20px;
+    background: #ffffff;
+    display: grid;
+    row-gap: 10px;
+}
+
+.sideContent .hashtagsBlock .text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sideContent .hashtagsBlock .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.sideContent .hashtagsBlock .hashtags .hash {
+    background: #e9f0f8;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .footLine {
