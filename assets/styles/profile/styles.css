@@ -19,6 +19,14 @@ p {
     color: #181818;
 }
 
+.line {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: #e7e7e7;
+    margin: 0px;
+}
+
 .seemore {
     font-weight: 500;
     font-size: 12px;
@@ -278,23 +286,14 @@ p {
 .side {
     grid-column: 3/4;
     display: grid;
-    grid-template-rows: auto auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
     align-items: center;
-    height: 100%;
+    align-self: start;
     background: rgba(255, 255, 255, 1);
     width: 100%;
-}
-
-.side div {
-    margin: 0px 30px;
-}
-
-.side hr {
-    width: 90%;
-    justify-self: center;
-    height: 2px;
-    border: none;
-    background: #f4f4f4;
+    padding: 20px;
+    row-gap: 10px;
+    box-sizing: border-box;
 }
 
 .side .head {
@@ -306,7 +305,6 @@ p {
     font-size: 18px;
     font-weight: 500;
     color: #181818;
-    margin: 20px 0px 5px 0px;
 }
 
 .side .head .link {
@@ -315,7 +313,6 @@ p {
     font-weight: 500;
     color: #0275b1;
     text-decoration: underline;
-    margin: 20px 0px 5px 0px;
 }
 
 .infoBlock {
@@ -335,7 +332,6 @@ p {
     font-size: 18px;
     color: #181818;
     align-self: start;
-    margin-bottom: 40px;
 }
 
 .aboutBlock {

@@ -209,6 +209,7 @@ p {
     justify-content: center;
     column-gap: 10px;
 }
+
 .centralContent .lineBlock {
     display: grid;
     align-items: center;
